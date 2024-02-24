@@ -1,0 +1,4 @@
+repository "Arcane Oasis@Arcane_Oasis_Team@cloud"
+  path "/"
+    br "/main"
+    co "/main"
