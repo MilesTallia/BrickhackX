@@ -8,6 +8,7 @@ public class SpawnManager : Singleton<SpawnManager>
     protected SpawnManager() { }
 
     public List<GameObject> objects;
+    private List<GameObject> destroyMe = new List<GameObject>();
 
     public int objectCount = 5;
     
@@ -20,15 +21,22 @@ public class SpawnManager : Singleton<SpawnManager>
     }
 
     void Update() {
-        Spawn();
+        // Spawn();
         Despawn();
     }
 
     public void Despawn() {
-        foreach (GameObject lilguy in objects) {
+        List<GameObject> replaceme = new List<GameObject>();
+        foreach (GameObject lilguy in destroyMe) {
             if (Vector3.Distance(lilguy.transform.position, Camera.main.transform.position) > distance+10) {
-                Destroy(lilguy);
+                DestroyImmediate(lilguy,true);
+            } else {
+                replaceme.Add(lilguy);
             }
+        }
+        destroyMe.Clear();
+        foreach (GameObject lilguy in replaceme) {
+            destroyMe.Add(lilguy);
         }
     }
 
@@ -54,6 +62,6 @@ public class SpawnManager : Singleton<SpawnManager>
 
         Instantiate(newObject);
         newObject.transform.position = new Vector3(spawnx,spawny);
-
+        destroyMe.Add(newObject);
     }
 }
