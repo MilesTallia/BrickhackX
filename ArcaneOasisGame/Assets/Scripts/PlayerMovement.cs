@@ -11,19 +11,16 @@ public class PlayerMovement : MonoBehaviour
 
     public float runSpeed = 20.0f;
 
-    void Start ()
-    {
-    body = GetComponent<Rigidbody2D>(); 
+    void Start () {
+        body = GetComponent<Rigidbody2D>(); 
     }
 
-    void Update ()
-    {
-    horizontal = Input.GetAxisRaw("Horizontal");
-    vertical = Input.GetAxisRaw("Vertical"); 
+    void Update () {
+        horizontal = Input.GetAxisRaw("Horizontal");
+        vertical = Input.GetAxisRaw("Vertical"); 
     }
 
-    private void FixedUpdate()
-    {  
-    body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
+    private void FixedUpdate() {  
+        body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
     }
 }

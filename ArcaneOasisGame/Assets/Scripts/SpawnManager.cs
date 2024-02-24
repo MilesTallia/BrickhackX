@@ -9,7 +9,9 @@ public class SpawnManager : Singleton<SpawnManager>
 
     public List<GameObject> objects;
 
-    public int objectCount = 50;
+    public int objectCount = 5;
+    
+    public float distance = 20f;
 
     List<GameObject> spawnedObjects = new List<GameObject>();
 
@@ -18,7 +20,16 @@ public class SpawnManager : Singleton<SpawnManager>
     }
 
     void Update() {
+        Spawn();
+        Despawn();
+    }
 
+    public void Despawn() {
+        foreach (GameObject lilguy in objects) {
+            if (Vector3.Distance(lilguy.transform.position, Camera.main.transform.position) > distance+10) {
+                Destroy(lilguy);
+            }
+        }
     }
 
     public void Spawn() {
@@ -31,11 +42,18 @@ public class SpawnManager : Singleton<SpawnManager>
         GameObject newObject = objects[Random.Range(0, objects.Count)];
 
         // set location
-        float heightSTD = Random.Range(-Camera.main.orthographicSize, Camera.main.orthographicSize);
-        float widthSTD = Random.Range(-heightSTD * Camera.main.aspect, heightSTD * Camera.main.aspect);
+        float camerax = Camera.main.transform.position.x;
+        float cameray = Camera.main.transform.position.y;
+
+        //set angle
+        float angle = Random.Range(0.0f,Mathf.PI*2); 
+
+        //set spawn location
+        float spawnx = camerax + Mathf.Sin(angle)*distance;
+        float spawny = cameray + Mathf.Cos(angle)*distance;
 
         Instantiate(newObject);
-        newObject.transform.position = new Vector3(widthSTD,heightSTD);
+        newObject.transform.position = new Vector3(spawnx,spawny);
 
     }
 }
