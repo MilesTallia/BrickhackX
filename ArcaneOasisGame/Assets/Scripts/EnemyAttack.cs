@@ -12,7 +12,7 @@ public class EnemyAttack : MonoBehaviour
     //how much damage the attack does
     public float attackDistance;
     //how long the enemy readies attack for
-    private float readyTime = 2;
+    private float readyTime = 1;
 
     //locks a direction
     private Vector3 playerDirection;
@@ -24,7 +24,7 @@ public class EnemyAttack : MonoBehaviour
 
     private bool isAttacking;
 
-    public SpriteRenderer spriteRenderer;
+    private SpriteRenderer spriteRenderer;
     public Sprite readySprite;
 
     public Sprite restSprite;
@@ -38,7 +38,7 @@ public class EnemyAttack : MonoBehaviour
     
     void Start()
     {
-        
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
     void setRestSprite(){
@@ -46,11 +46,11 @@ public class EnemyAttack : MonoBehaviour
     }
 
     void setReadySprite(){
-        spriteRenderer.sprite = restSprite;
+        spriteRenderer.sprite = readySprite;
     }
 
     void setAttackSprite(){
-        spriteRenderer.sprite = restSprite;
+        spriteRenderer.sprite = attackSprite;
     }
 
     // Update is called once per frame
@@ -65,7 +65,7 @@ public class EnemyAttack : MonoBehaviour
                 if (attackTimer > readyTime) {
                     if (distanceMoved > attackDistance){
                         isAttacking = false;
-                        attackCooldown = 4;
+                        attackCooldown = 2;
                         setRestSprite();
                     } else {
                         setAttackSprite();
@@ -74,9 +74,8 @@ public class EnemyAttack : MonoBehaviour
                         distanceMoved += velocity.magnitude;
                     }
                 }
-            }
-            else if (detector.playerInRange) {
-                playerDirection = (transform.position - detector.player.position).normalized;
+            } else if (detector.playerInRange) {
+                playerDirection = (detector.player.position- transform.position ).normalized;
                 distanceMoved = 0;
                 attackTimer = 0;
                 isAttacking = true;
