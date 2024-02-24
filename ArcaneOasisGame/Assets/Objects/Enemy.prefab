@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a44a0feb30534c749a4de218d2ddc5f6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5c4a2538245522144b166092200f2ca1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -150,8 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackDistance: 10
   detector: {fileID: 7912546099464322225}
-  spriteRenderer: {fileID: 3503117352972033894}
   readySprite: {fileID: 21300000, guid: 9b9811e5a82fe92458dba83f07f5c1be, type: 3}
-  restSprite: {fileID: 21300000, guid: a44a0feb30534c749a4de218d2ddc5f6, type: 3}
+  restSprite: {fileID: 21300000, guid: 5c4a2538245522144b166092200f2ca1, type: 3}
   attackSprite: {fileID: 21300000, guid: 725ea9fb2736a3f48bc71e959b22bbfa, type: 3}
   attackSpeed: 2
