@@ -11,6 +11,7 @@ public class RockCollision : MonoBehaviour {
         if (collision.tag == "Player") {
             resourcesManager.addStone(5);
             resourcesManager.addGem(1);
+            Destroy(this.gameObject);
         }
     }
     

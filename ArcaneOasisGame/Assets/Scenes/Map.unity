@@ -1362,7 +1362,7 @@ MonoBehaviour:
   - {fileID: 5225485717523965710, guid: 340cd86157898a344a3947c74d62445f, type: 3}
   objectCount: 5
   distance: 20
-  timePassedCap: 1000
+  timePassedCap: 200
 --- !u!4 &1118406773
 Transform:
   m_ObjectHideFlags: 0

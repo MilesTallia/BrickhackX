@@ -10,6 +10,7 @@ public class LogCollision : MonoBehaviour {
         Debug.Log(collision.tag + " adding wood!");
         if (collision.tag == "Player") {
             resourcesManager.addWood(5);
+            Destroy(this.gameObject);
         }
     }
     
