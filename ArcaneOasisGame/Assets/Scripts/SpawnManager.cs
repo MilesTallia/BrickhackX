@@ -26,7 +26,7 @@ public class SpawnManager : Singleton<SpawnManager> {
     }
 
     void Update() {
-        if (Camera.main.transform.position != oldCameraPosition) {
+        if (Vector3.Distance(oldCameraPosition, Camera.main.transform.position) > 5) {
             timePassed++;
             if (timePassed > timePassedCap) {
                 oldCameraPosition = Camera.main.transform.position;
