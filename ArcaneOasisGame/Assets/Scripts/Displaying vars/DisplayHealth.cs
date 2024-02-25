@@ -5,16 +5,16 @@ using UnityEngine.UI;
 
 public class DisplayHealth : MonoBehaviour
 {
-    public ResourcesManager resourceManager;
+    public PlayerHealth playerhealth;
     public Text health;
 
     void Start()
     {
-        health.text = resourceManager.getMetal().ToString();
+        health.text = playerhealth.currentHealth.ToString();
     }
 
     void Update()
     {
-        health.text = resourceManager.getMetal().ToString();
+        health.text = playerhealth.currentHealth.ToString();
     }
 }
