@@ -2,9 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ResourcesManager : MonoBehaviour
-{
-    public List<GameObject> objects;
+public class ResourcesManager : MonoBehaviour {
 
     private static int woodAmount;
     private static int stoneAmount;

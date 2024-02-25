@@ -3,18 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DisplayWood : MonoBehaviour
-{
+public class DisplayWood : MonoBehaviour {
+
+    public ResourcesManager resourceManager;
     public Text wood;
-    // Start is called before the first frame update
-    void Start()
-    {
-        wood.text = ResourcesManager.getWood().ToString();
+
+    void Start() {
+        wood.text = resourceManager.getWood().ToString();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
+    void Update() {
+        wood.text = resourceManager.getWood().ToString();
     }
 }
