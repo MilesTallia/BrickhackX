@@ -7,9 +7,9 @@ using UnityEngine;
 public class Machines : MonoBehaviour
 {
     public ResourcesManager resourceManager;
-    private static int woodps;
-    private static int stoneps;
-    private static int metalps;
+    private static int woodps = 5;
+    private static int stoneps = 5;
+    private static int metalps = 5;
 
     // Start is called before the first frame update
     void Start()
@@ -20,9 +20,15 @@ public class Machines : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        resourceManager.addWood((int)(Time.deltaTime * (float)woodps));
-        resourceManager.addStone((int)(Time.deltaTime * (float)stoneps));
-        resourceManager.addMetal((int)(Time.deltaTime * (float)metalps));
+        float interval = 0;
+        interval += Time.deltaTime;
+        if (interval > 1)
+        {
+            resourceManager.addWood(woodps);
+            resourceManager.addStone(stoneps);
+            resourceManager.addMetal(metalps);
+            interval = 0;
+        }
 
     }
 
