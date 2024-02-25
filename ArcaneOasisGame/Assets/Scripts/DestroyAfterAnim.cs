@@ -4,10 +4,11 @@ using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
 public class DestroyAfterAnim : MonoBehaviour {
-    public float delay = 1;
+    public float delay = 0;
     
     void Start() {
         float animTime = GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length;
-        Destroy(gameObject, animTime + delay);
+        Debug.Log(animTime);
+        Destroy(gameObject, animTime);
     }
 }

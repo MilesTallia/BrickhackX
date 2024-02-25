@@ -188,6 +188,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spell1: {fileID: 8115959420186640450, guid: 1ac9793138ea7b3489928734079a6652, type: 3}
   spell1Cooldown: 1
+  spell2: {fileID: 5313061883896489350, guid: 6636abe91f6e781419fe2162ebbdde67, type: 3}
+  spell2Cooldown: 0.5
 --- !u!114 &-1488971344996704748
 MonoBehaviour:
   m_ObjectHideFlags: 0

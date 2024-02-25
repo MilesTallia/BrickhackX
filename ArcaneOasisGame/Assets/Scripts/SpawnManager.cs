@@ -14,7 +14,7 @@ public class SpawnManager : Singleton<SpawnManager> {
     public float distance = 20f;
     
     private float timePassed = 0;
-    public float timePassedCap = 1000;
+    public float timePassedCap = 200;
 
     private Vector3 oldCameraPosition;
 
@@ -40,7 +40,9 @@ public class SpawnManager : Singleton<SpawnManager> {
     public void Despawn() {
         List<GameObject> replaceme = new List<GameObject>();
         foreach (GameObject lilguy in destroyMe) {
-            if (Vector3.Distance(lilguy.transform.position, Camera.main.transform.position) > distance+5) {
+            if (lilguy == null) {
+
+            } else if (Vector3.Distance(lilguy.transform.position, Camera.main.transform.position) > distance+5) {
                 DestroyImmediate(lilguy,true);
             } else {
                 replaceme.Add(lilguy);
