@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int maxHealth = 1000;//Wizard.getMaxHealth();
+    public int maxHealth = Wizard.getMaxHealth();
     public int currentHealth;
 
     public HealthBar healthBar;
@@ -25,7 +25,7 @@ public class PlayerHealth : MonoBehaviour
         //TakeDamage(1);
     }
 
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
