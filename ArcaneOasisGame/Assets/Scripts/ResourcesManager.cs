@@ -2,7 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class Resources {
+public class ResourcesManager : MonoBehaviour
+{
+    public List<GameObject> objects;
+
     private static int woodAmount;
     private static int stoneAmount;
     private static int metalAmount;
@@ -58,7 +61,18 @@ public static class Resources {
     {
         return essenceAmount;
     }
+    
+    void Start()
+    {
+        woodAmount = 0;
+        stoneAmount = 0;
+        metalAmount = 0;
+        gemAmount = 0;
+        essenceAmount = 0;
+    }
 
-
+    void Update()
+    {
+        
+    }
 }
-
