@@ -123,6 +123,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &23869610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 23869611}
+  m_Layer: 0
+  m_Name: EnemyZone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &23869611
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23869610}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.22694002, y: 0.18508956, z: 0.305294}
+  m_LocalScale: {x: 0.125, y: 0.125, z: 0.125}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1072884244}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &31012451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -355,6 +386,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7528404035897401001, guid: 340cd86157898a344a3947c74d62445f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 452706472}
+    - targetCorrespondingSourceObject: {fileID: 7528404035897401001, guid: 340cd86157898a344a3947c74d62445f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 23869611}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5225485717523965710, guid: 340cd86157898a344a3947c74d62445f, type: 3}
       insertIndex: -1
@@ -907,11 +941,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5536345901345937747, guid: 08c3ae91ad254914a9c9c33e69e15e05, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -335.98
+      value: -254.78
       objectReference: {fileID: 0}
     - target: {fileID: 5536345901345937747, guid: 08c3ae91ad254914a9c9c33e69e15e05, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 206
+      value: 193.6
       objectReference: {fileID: 0}
     - target: {fileID: 5536345901345937747, guid: 08c3ae91ad254914a9c9c33e69e15e05, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
