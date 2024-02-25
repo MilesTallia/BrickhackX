@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class ResourcesManager : MonoBehaviour {
 
-    private static int woodAmount;
-    private static int stoneAmount;
-    private static int metalAmount;
-    private static int gemAmount;
-    private static int essenceAmount;
+    private static int woodAmount = 0;
+    private static int stoneAmount = 0;
+    private static int metalAmount = 0;
+    private static int gemAmount = 0;
+    private static int essenceAmount = 0;
 
     public void addWood(int amount)
     {
