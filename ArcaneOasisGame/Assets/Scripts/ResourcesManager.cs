@@ -2,9 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ResourcesManager : MonoBehaviour
-{
-    public List<GameObject> objects;
+public class ResourcesManager : MonoBehaviour {
 
     private static int woodAmount;
     private static int stoneAmount;
@@ -12,52 +10,52 @@ public class ResourcesManager : MonoBehaviour
     private static int gemAmount;
     private static int essenceAmount;
 
-    public static void addWood(int amount)
+    public void addWood(int amount)
     {
         woodAmount += amount;
     }
 
-    public static void addStone(int amount)
+    public void addStone(int amount)
     {
         stoneAmount += amount;
     }
 
-    public static void addMetal(int amount)
+    public void addMetal(int amount)
     {
         metalAmount += amount;
     }
 
-    public static void addGem(int amount)
+    public void addGem(int amount)
     {
         gemAmount += amount;
     }
 
-    public static void addEssence(int amount)
+    public void addEssence(int amount)
     {
         essenceAmount += amount;
     }
 
-    public static int getWood()
+    public int getWood()
     {
         return woodAmount;
     }
 
-    public static int getStone()
+    public int getStone()
     {
         return stoneAmount;
     }
 
-    public static int getMetal()
+    public int getMetal()
     {
         return metalAmount;
     }
 
-    public static int getGem()
+    public int getGem()
     {
         return gemAmount;
     }
 
-    public static int getEssence()
+    public int getEssence()
     {
         return essenceAmount;
     }

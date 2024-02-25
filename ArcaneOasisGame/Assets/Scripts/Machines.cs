@@ -2,8 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class Machines : MonoBehaviour
 {
+    public ResourcesManager resourceManager;
     private static int woodps;
     private static int stoneps;
     private static int metalps;
@@ -17,9 +20,9 @@ public class Machines : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ResourcesManager.addWood((int)(Time.deltaTime * (float)woodps));
-        ResourcesManager.addStone((int)(Time.deltaTime * (float)stoneps));
-        ResourcesManager.addMetal((int)(Time.deltaTime * (float)metalps));
+        resourceManager.addWood((int)(Time.deltaTime * (float)woodps));
+        resourceManager.addStone((int)(Time.deltaTime * (float)stoneps));
+        resourceManager.addMetal((int)(Time.deltaTime * (float)metalps));
 
     }
 
