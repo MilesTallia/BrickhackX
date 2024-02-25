@@ -143,6 +143,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7527159155481575346, guid: d64ceb029270d524282a8006b8f1e2fa, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8765060692654633782, guid: d64ceb029270d524282a8006b8f1e2fa, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.5670896
@@ -251,6 +255,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8265204700725658917, guid: d38f7d2b755fcdc4aa495c22f9b4c640, type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8265204700725658917, guid: d38f7d2b755fcdc4aa495c22f9b4c640, type: 3}
+      propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -403,6 +411,7 @@ MonoBehaviour:
   - {fileID: 5608273762373501131, guid: 18e9424dc0e8b434aa65fe12b8e615b5, type: 3}
   - {fileID: 7067172235913679142, guid: c48ec1cdcec89144d893a935ade26a23, type: 3}
   - {fileID: 6219023388600227145, guid: 76aea0c57c0bc1a49bd423a0f647a432, type: 3}
+  - {fileID: 3215209472598828915, guid: c2d5aac3c2239e144af117fe8c3368b3, type: 3}
   objectCount: 5
   distance: 20
   timePassedCap: 1000

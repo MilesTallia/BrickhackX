@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8369414117527980682}
   - component: {fileID: 7527159155481575346}
   - component: {fileID: 5835435289744746244}
+  - component: {fileID: -1488971344996704748}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -187,3 +188,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spell1: {fileID: 8115959420186640450, guid: 1ac9793138ea7b3489928734079a6652, type: 3}
   spell1Cooldown: 1
+--- !u!114 &-1488971344996704748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737449792371606341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8e05dca8aa7f4b419440bc77c019c49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
