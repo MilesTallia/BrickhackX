@@ -1058,7 +1058,7 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 4
     m_NumAlphaKeys: 2
-  fill: {fileID: 0}
+  fill: {fileID: 646129487}
 --- !u!114 &974276087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1841,6 +1841,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -2189153922554169120, guid: d64ceb029270d524282a8006b8f1e2fa, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 974276086}
+    - target: {fileID: -2189153922554169120, guid: d64ceb029270d524282a8006b8f1e2fa, type: 3}
       propertyPath: currentHealth
       value: 100
       objectReference: {fileID: 0}
@@ -1920,7 +1924,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1083448993970516634, guid: d64ceb029270d524282a8006b8f1e2fa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
