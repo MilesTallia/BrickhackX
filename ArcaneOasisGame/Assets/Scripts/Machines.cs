@@ -17,9 +17,9 @@ public class Machines : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Resources.addWood((int)(Time.deltaTime * (float)woodps));
-        Resources.addStone((int)(Time.deltaTime * (float)stoneps));
-        Resources.addMetal((int)(Time.deltaTime * (float)metalps));
+        ResourcesManager.addWood((int)(Time.deltaTime * (float)woodps));
+        ResourcesManager.addStone((int)(Time.deltaTime * (float)stoneps));
+        ResourcesManager.addMetal((int)(Time.deltaTime * (float)metalps));
 
     }
 

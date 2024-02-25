@@ -10,7 +10,7 @@ public class SpawnManager : Singleton<SpawnManager>
     public List<GameObject> objects;
     private List<GameObject> destroyMe = new List<GameObject>();
 
-    public int objectCount = 1;
+    public int objectCount = 5;
     
     public float distance = 20f;
     
