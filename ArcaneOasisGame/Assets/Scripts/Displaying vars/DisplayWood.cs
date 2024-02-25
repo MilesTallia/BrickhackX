@@ -13,7 +13,6 @@ public class DisplayWood : MonoBehaviour {
     }
 
     void Update() {
-        Debug.Log(resourceManager.getWood().ToString());
         wood.text = resourceManager.getWood().ToString();
     }
 }

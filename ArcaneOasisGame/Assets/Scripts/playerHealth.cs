@@ -29,5 +29,10 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
+        if (currentHealth <= 0) {
+            transform.position = new Vector3(0,0, -1);
+            currentHealth = maxHealth;
+            healthBar.SetHealth(currentHealth);
+        }
     }
 }
