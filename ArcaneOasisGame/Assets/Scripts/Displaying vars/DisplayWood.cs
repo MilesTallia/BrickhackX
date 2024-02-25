@@ -9,10 +9,11 @@ public class DisplayWood : MonoBehaviour {
     public Text wood;
 
     void Start() {
-        wood.text = "hi" + resourceManager.getWood().ToString();
+        wood.text = resourceManager.getWood().ToString();
     }
 
     void Update() {
-        wood.text = "hi" + resourceManager.getWood().ToString();
+        Debug.Log(resourceManager.getWood().ToString());
+        wood.text = resourceManager.getWood().ToString();
     }
 }
