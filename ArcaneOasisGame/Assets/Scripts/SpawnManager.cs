@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnManager : Singleton<SpawnManager>
-{
+public class SpawnManager : Singleton<SpawnManager> {
     // (Optional) Prevent non-singleton constructor use.
     protected SpawnManager() { }
 

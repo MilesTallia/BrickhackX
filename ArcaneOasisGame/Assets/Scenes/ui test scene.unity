@@ -349,7 +349,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3688651755139162094, guid: 340cd86157898a344a3947c74d62445f, type: 3}
       propertyPath: attackSpeed
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3688651755139162094, guid: 340cd86157898a344a3947c74d62445f, type: 3}
       propertyPath: attackDistance
