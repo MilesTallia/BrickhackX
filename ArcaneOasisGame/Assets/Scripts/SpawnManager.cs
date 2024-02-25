@@ -10,25 +10,38 @@ public class SpawnManager : Singleton<SpawnManager>
     public List<GameObject> objects;
     private List<GameObject> destroyMe = new List<GameObject>();
 
-    public int objectCount = 5;
+    public int objectCount = 1;
     
     public float distance = 20f;
+    
+    private float timePassed = 0;
+    public float timePassedCap = 1000;
+
+    private Vector3 oldCameraPosition;
 
     List<GameObject> spawnedObjects = new List<GameObject>();
 
     void Start() {
+        oldCameraPosition = Camera.main.transform.position;
         Spawn();
     }
 
     void Update() {
-        // Spawn();
-        Despawn();
+        if (Camera.main.transform.position != oldCameraPosition) {
+            timePassed++;
+            if (timePassed > timePassedCap) {
+                oldCameraPosition = Camera.main.transform.position;
+                Spawn();
+                Despawn();
+                timePassed = 0;
+            }
+        }
     }
 
     public void Despawn() {
         List<GameObject> replaceme = new List<GameObject>();
         foreach (GameObject lilguy in destroyMe) {
-            if (Vector3.Distance(lilguy.transform.position, Camera.main.transform.position) > distance+10) {
+            if (Vector3.Distance(lilguy.transform.position, Camera.main.transform.position) > distance+5) {
                 DestroyImmediate(lilguy,true);
             } else {
                 replaceme.Add(lilguy);
@@ -47,7 +60,7 @@ public class SpawnManager : Singleton<SpawnManager>
     }
 
     public void spawnObject() {
-        GameObject newObject = objects[Random.Range(0, objects.Count)];
+        GameObject oldObject = objects[Random.Range(0, objects.Count)];
 
         // set location
         float camerax = Camera.main.transform.position.x;
@@ -60,7 +73,7 @@ public class SpawnManager : Singleton<SpawnManager>
         float spawnx = camerax + Mathf.Sin(angle)*distance;
         float spawny = cameray + Mathf.Cos(angle)*distance;
 
-        Instantiate(newObject);
+        GameObject newObject = Instantiate(oldObject) as GameObject;
         newObject.transform.position = new Vector3(spawnx,spawny);
         destroyMe.Add(newObject);
     }
