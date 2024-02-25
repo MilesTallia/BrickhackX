@@ -14,7 +14,7 @@ public class SpawnManager : Singleton<SpawnManager> {
     public float distance = 20f;
     
     private float timePassed = 0;
-    public float timePassedCap = 1000;
+    public float timePassedCap = 200;
 
     private Vector3 oldCameraPosition;
 
