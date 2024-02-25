@@ -71,8 +71,8 @@ public class SpawnManager : Singleton<SpawnManager> {
         float angle = Random.Range(0.0f,Mathf.PI*2); 
 
         //set spawn location
-        float spawnx = camerax + Mathf.Sin(angle)*distance;
-        float spawny = cameray + Mathf.Cos(angle)*distance;
+        float spawnx = camerax + Mathf.Sin(angle)*distance + Random.Range(-5,5);
+        float spawny = cameray + Mathf.Cos(angle)*distance + Random.Range(-5,5);
 
         GameObject newObject = Instantiate(oldObject) as GameObject;
         newObject.transform.position = new Vector3(spawnx,spawny);

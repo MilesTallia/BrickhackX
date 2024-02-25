@@ -1399,9 +1399,9 @@ MonoBehaviour:
   - {fileID: 3215209472598828915, guid: c2d5aac3c2239e144af117fe8c3368b3, type: 3}
   - {fileID: 8635976598901793939, guid: 8a50158bd984e394a9189fdc6a40f785, type: 3}
   - {fileID: 2918385954163484812, guid: 68496bf11b8588e47a34efe7c14a1007, type: 3}
-  objectCount: 5
+  objectCount: 10
   distance: 20
-  timePassedCap: 100
+  timePassedCap: 200
 --- !u!4 &1118406773
 Transform:
   m_ObjectHideFlags: 0
