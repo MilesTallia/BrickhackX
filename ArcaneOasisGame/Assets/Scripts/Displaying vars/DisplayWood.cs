@@ -9,7 +9,7 @@ public class DisplayWood : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        wood.text = Resources.getWood().ToString();
+        wood.text = ResourcesManager.getWood().ToString();
     }
 
     // Update is called once per frame
