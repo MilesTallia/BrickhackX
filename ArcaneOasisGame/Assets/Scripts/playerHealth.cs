@@ -4,20 +4,30 @@ using UnityEngine;
 
 public class Player_Health : MonoBehaviour
 {
-    Rigidbody2D body;
+    public int maxHealth = 1000;//Wizard.getMaxHealth();
+    public int currentHealth;
 
-    public float health = 100f;
+    public HealthBar healthBar;
 
-    public float currentHealth = 100f;
     // Start is called before the first frame update
     void Start()
     {
-        body = GetComponent<Rigidbody2D>();
+        currentHealth = maxHealth;
+
+        healthBar.SetMaxHealth(maxHealth);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //when taking damage call "TakeDamage(damage number dealt)"
+        //TakeDamage(1);
+    }
+
+    void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
     }
 }
