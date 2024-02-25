@@ -665,6 +665,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbe7ad1bf8a8c433ebfb6fc8c352c33a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  body: {fileID: 0}
+  horizontal: 0
+  vertical: 0
   runSpeed: 20
 --- !u!114 &343642301
 MonoBehaviour:
@@ -931,7 +934,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 318, y: 203}
+  m_AnchoredPosition: {x: 290, y: 203}
   m_SizeDelta: {x: 139.5535, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &653121876
@@ -947,7 +950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resourceManager: {fileID: 2034882080}
-  metal: {fileID: 0}
+  metal: {fileID: 653121877}
 --- !u!114 &653121877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -970,11 +973,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 1
+    m_MaxSize: 148
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1041,7 +1044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resourceManager: {fileID: 2034882080}
-  stone: {fileID: 0}
+  stone: {fileID: 774291314}
 --- !u!114 &774291314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1135,7 +1138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resourceManager: {fileID: 2034882080}
-  essence: {fileID: 0}
+  essence: {fileID: 903751671}
 --- !u!114 &903751671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1439,7 +1442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resourceManager: {fileID: 2034882080}
-  wood: {fileID: 0}
+  wood: {fileID: 1102968084}
 --- !u!114 &1102968084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1587,7 +1590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resourceManager: {fileID: 2034882080}
-  gem: {fileID: 0}
+  gem: {fileID: 1256026661}
 --- !u!114 &1256026661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1610,11 +1613,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 1
+    m_MaxSize: 198
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1

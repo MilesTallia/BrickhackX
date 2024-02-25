@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player_Health : MonoBehaviour
 {
-    public int maxHealth = 1000;//Wizard.getMaxHealth();
+    public int maxHealth = Wizard.getMaxHealth();
     public int currentHealth;
 
     public HealthBar healthBar;
