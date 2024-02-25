@@ -15,6 +15,15 @@ public class CastSpells : MonoBehaviour
     // Start is called before the first frame update
 
     private Rigidbody2D rb;
+    public float getSpellTimer1()
+    {
+        return spell1Timer;
+    }
+
+    public float getSpellTimer2()
+    {
+        return spell2Timer;
+    }
 
     void Start()
     {
