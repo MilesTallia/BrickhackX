@@ -43,4 +43,11 @@ public class Machines : MonoBehaviour
         }
 
     }
+
+    public void Levels(int type, int level)
+    {
+        Upgrade(type, level * 5);
+
+    }
+
 }
