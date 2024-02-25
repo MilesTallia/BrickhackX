@@ -3,13 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
-public class DestroyAfterAnim : MonoBehaviour
-{
-    void float delay;
-    // Start is called before the first frame update
-    void Start()
-    {
+public class DestroyAfterAnim : MonoBehaviour {
+    public float delay = 1;
+    
+    void Start() {
         float animTime = GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length;
-        Destroy(gameObject, animTime, + delay);
+        Destroy(gameObject, animTime + delay);
     }
 }
