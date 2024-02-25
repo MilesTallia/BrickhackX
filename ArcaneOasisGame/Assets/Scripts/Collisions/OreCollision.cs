@@ -11,6 +11,7 @@ public class OreCollision : MonoBehaviour {
         if (collision.tag == "Player") {
             resourcesManager.addMetal(5);
             resourcesManager.addGem(3);
+            Destroy(this.gameObject);
         }
     }
     
