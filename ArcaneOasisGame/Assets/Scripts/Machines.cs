@@ -75,8 +75,29 @@ public class Machines : MonoBehaviour
 
     public void UpMachine(Machine mach)
     {
-        mach.AddLevel();
-        Levels(mach.getType(), mach.getLevel());
+        switch (mach.getType()) {
+            case 1:
+                if (resourceManager.getWood() > Math.Pow(2, mach.getType() * 50)){
+                    mach.AddLevel();
+                    Levels(mach.getType(), mach.getLevel());
+                }
+                break;
+            case 2:
+                if (resourceManager.getStone() > Math.Pow(2, mach.getType() * 50))
+                {
+                    mach.AddLevel();
+                    Levels(mach.getType(), mach.getLevel());
+                }
+                break;
+            case 3:
+                if (resourceManager.getMetal() > Math.Pow(2, mach.getType() * 50))
+                {
+                    mach.AddLevel();
+                    Levels(mach.getType(), mach.getLevel());
+                }
+                break;
+        }
+
     }
     public void AddMax()
     {
