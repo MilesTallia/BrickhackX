@@ -13,8 +13,8 @@ public class SpawnManager : Singleton<SpawnManager> {
     
     public float distance = 20f;
     
-    private float timePassed = 0;
-    public float timePassedCap = 200;
+    private float timePassed = 0f;
+    public float timePassedCap = .2f;
 
     private Vector3 oldCameraPosition;
 
@@ -27,12 +27,12 @@ public class SpawnManager : Singleton<SpawnManager> {
 
     void Update() {
         if (Vector3.Distance(oldCameraPosition, Camera.main.transform.position) > 5) {
-            timePassed++;
+            timePassed += Time.deltaTime;
             if (timePassed > timePassedCap) {
                 oldCameraPosition = Camera.main.transform.position;
                 Spawn();
                 Despawn();
-                timePassed = 0;
+                timePassed = 0f;
             }
         }
     }
@@ -74,8 +74,11 @@ public class SpawnManager : Singleton<SpawnManager> {
         float spawnx = camerax + Mathf.Sin(angle)*distance + Random.Range(-5,5);
         float spawny = cameray + Mathf.Cos(angle)*distance + Random.Range(-5,5);
 
-        GameObject newObject = Instantiate(oldObject) as GameObject;
-        newObject.transform.position = new Vector3(spawnx,spawny);
-        destroyMe.Add(newObject);
+        if ( spawnx+spawny > 10 || spawnx+spawny < -10 ) {
+            GameObject newObject = Instantiate(oldObject) as GameObject;
+            newObject.transform.position = new Vector3(spawnx,spawny);
+            destroyMe.Add(newObject);
+            return;
+        }
     }
 }

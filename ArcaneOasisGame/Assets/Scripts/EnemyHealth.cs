@@ -8,6 +8,8 @@ public class EnemyHealth : MonoBehaviour{
 
     public HealthBar healthBar;
 
+    public ResourcesManager rm;
+
     void Start() {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
@@ -21,6 +23,7 @@ public class EnemyHealth : MonoBehaviour{
         healthBar.SetHealth(currentHealth);
         if (currentHealth <= 0) {
             Destroy(gameObject);
+            rm.addEssence(5);
         }
     }
 }

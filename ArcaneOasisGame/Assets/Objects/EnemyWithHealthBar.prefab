@@ -253,6 +253,7 @@ MonoBehaviour:
   maxHealth: 200
   currentHealth: 200
   healthBar: {fileID: 6289951780264478555}
+  rm: {fileID: -1488971344996704748, guid: d64ceb029270d524282a8006b8f1e2fa, type: 3}
 --- !u!1001 &7721219564537986055
 PrefabInstance:
   m_ObjectHideFlags: 0
