@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 3223188464004230844}
   - component: {fileID: 7912546099464322225}
   - component: {fileID: 3688651755139162094}
+  - component: {fileID: 3045347705347662201}
+  - component: {fileID: -6909031849860915151}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -154,3 +156,32 @@ MonoBehaviour:
   restSprite: {fileID: 21300000, guid: 5c4a2538245522144b166092200f2ca1, type: 3}
   attackSprite: {fileID: 21300000, guid: 725ea9fb2736a3f48bc71e959b22bbfa, type: 3}
   attackSpeed: 2
+--- !u!114 &3045347705347662201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5225485717523965710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06a72d44f11f7394c932fae1ad3e1169, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: -2189153922554169120, guid: d64ceb029270d524282a8006b8f1e2fa, type: 3}
+  enemyHealth: {fileID: 0}
+--- !u!114 &-6909031849860915151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5225485717523965710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbdb7b3d20fc32340a5e61733513b39c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 200
+  currentHealth: 200
+  healthBar: {fileID: 6622105686025521319, guid: 08c3ae91ad254914a9c9c33e69e15e05, type: 3}
