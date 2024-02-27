@@ -7,24 +7,20 @@ public class Machine{
     private static int level;
     private static int type;
 
-
     public Machine(int whichType){
         type = whichType;
         level = 1;
     }
 
-    public void AddLevel()
-    {
+    public void AddLevel() {
         level++;
     }
 
-    public int getLevel()
-    {
+    public int getLevel() {
         return level;
     }
 
-    public int getType()
-    {
+    public int getType() {
         return type;
     }
 

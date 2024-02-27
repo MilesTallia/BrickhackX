@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 34789
+  controlID: 44520
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -323,9 +323,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: -244, y: 10}
+      snapOffset: {x: 540, y: 10}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 1
+      snapCorner: 0
       id: UnityEditor.SceneViewCameraOverlay
       index: 10
       layout: 4
@@ -394,9 +394,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 387.33524, y: 237.6575, z: 0}
+    m_Target: {x: 365.43854, y: 202.28087, z: 0.38533032}
     speed: 2
-    m_Value: {x: 508.6293, y: 531.7887, z: -2.9861622}
+    m_Value: {x: 365.43854, y: 202.28087, z: 0.38533032}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -446,9 +446,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 462.41116
+    m_Target: 290.0572
     speed: 2
-    m_Value: 299.3303
+    m_Value: 290.0572
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -497,7 +497,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 34790
+  controlID: 44521
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -522,7 +522,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 34791
+  controlID: 44522
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -586,9 +586,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 08fafdff
-      m_LastClickedID: -132600
-      m_ExpandedIDs: 62fcfdffcefcfdff28fffdff9efffdff0400feff6200feffaa00feff2804feff3c07feffec09feffac0bfefff80dfeff1010feff8612fefff012feff5415feff5c17feffbc1efeff561ffeffce21feff5422feff1223feff1a23feff8e23feffea23feff4c28feffd828feff5229feff9e29feff242cfeff1a2efeff502ffeffc82ffeff4030feff9a30fefff430feff8034feffd834feff3835feff9c39feffee42feff1a44feffca45feffa446feff5c47feff9e48feff2449feff604afeff5693feffd49cfeff70a1feff78a7feff7aacfeff06aefeffdeb0feff70b4feff7ab4feff82b7000098b70000a2b7000068b8000072b80000ecb80000d2b90000e8b90000f2b9000004be00001abe000024be000088be000012bf000028bf000032bf0000f6c00000c2c100000cc30000a6c40000a2ca000094cb0000aecb000068cd00005ecf00007ccf000098cf000024d4000042d400005ed40000
+      m_SelectedIDs: d0a50000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 04cbfcffcce6fcff600efdff9e0ffdff5465fdff1466fdffcc66fdffa269fdff4e6afdff066bfdff546bfdff2c6efdffa86efdfff46efdff46cafdffa8cafdff2ccbfdff78e4fdff80e4fdffe0e9fdffe8e9fdff58eafdff62fcfdffcefcfdff28fffdff9efffdff0400feff6200feffaa00feff2804feff3c07feffec09feffac0bfefff80dfeff1010feff8612fefff012feff5415feff5c17feffbc1efeff561ffeffce21feff5422feff1223feff1a23feff8e23feffea23feff4c28feffd828feff5229feff9e29feff242cfeff1a2efeff502ffeffc82ffeff4030feff9a30fefff430feff8034feffd834feff3835feff9c39feffee42feff1a44feffca45feffa446feff5c47feff9e48feff2449feff604afeff5693feffd49cfeff70a1feff78a7feff7aacfeff06aefeffdeb0feff70b4feff7ab4feff82b7000098b70000a2b7000068b8000072b80000ecb80000d2b90000e8b90000f2b9000004be00001abe000024be000088be000012bf000028bf000032bf0000f6c00000c2c100000cc30000a6c40000a2ca000094cb0000aecb000068cd00005ecf00007ccf000098cf000024d4000042d400005ed40000fed60000aade0000c8de0000e4de0000b6df0000d8df00000ce0000036e000007afb000046fc000074fe0000f2fe00002aff00003aff0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -845,7 +845,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -853,16 +853,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/andrewdimauro/brickhack/BrickhackX/ArcaneOasisGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 248.5}
-    m_SelectedIDs: ba110000
-    m_LastClickedID: 4538
-    m_ExpandedIDs: 0000000046060000b206000082070000960a00005a0e0000e6100000a6b200006ab3000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: be060000
+    m_LastClickedID: 1726
+    m_ExpandedIDs: 000000000606000046060000b206000082070000960a00005a0e0000e6100000a6b200006ab3000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -890,7 +890,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000046060000a6b200006ab3000000ca9a3bffffff7f
+    m_ExpandedIDs: 0000000046060000b206000082070000960a00005a0e0000e6100000a6b200006ab3000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -915,8 +915,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 08fafdff
-    m_LastClickedInstanceID: -132600
+    m_SelectedInstanceIDs: d0a50000
+    m_LastClickedInstanceID: 42448
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000164700000000000066aa0000
     m_RenameOverlay:
@@ -999,8 +999,8 @@ MonoBehaviour:
     y: 0
     width: 449.5
     height: 723
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
