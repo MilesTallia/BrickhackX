@@ -630,6 +630,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Base
       objectReference: {fileID: 0}
+    - target: {fileID: 6087296278764975818, guid: d38f7d2b755fcdc4aa495c22f9b4c640, type: 3}
+      propertyPath: m_TagString
+      value: Base
+      objectReference: {fileID: 0}
     - target: {fileID: 6125893471776490567, guid: d38f7d2b755fcdc4aa495c22f9b4c640, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -800,7 +804,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e754255af281e4574ba2a09c2980d228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceManager: {fileID: 701219684}
+  resourceManager: {fileID: 0}
   metal: {fileID: 653121877}
 --- !u!114 &653121877
 MonoBehaviour:
@@ -853,17 +857,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3d89ec786f743044bc3dc542c5240e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &701219684 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: -1488971344996704748, guid: d64ceb029270d524282a8006b8f1e2fa, type: 3}
-  m_PrefabInstance: {fileID: 1986145637}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8e05dca8aa7f4b419440bc77c019c49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &701219690 stripped
@@ -921,7 +914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6036fc2ba4c1d49f6badbca77c6d5cbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceManager: {fileID: 701219684}
+  resourceManager: {fileID: 0}
   stone: {fileID: 774291314}
 --- !u!114 &774291314
 MonoBehaviour:
@@ -1015,7 +1008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969d970b969ae4bc78c9e4b922d49f26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceManager: {fileID: 701219684}
+  resourceManager: {fileID: 0}
   essence: {fileID: 903751671}
 --- !u!114 &903751671
 MonoBehaviour:
@@ -1319,7 +1312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6c9c4098bf64954bfe538c3c3ebc1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceManager: {fileID: 701219684}
+  resourceManager: {fileID: 0}
   wood: {fileID: 1102968084}
 --- !u!114 &1102968084
 MonoBehaviour:
@@ -1561,7 +1554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5196f59b5180d4df3a63e393726ac01c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceManager: {fileID: 701219684}
+  resourceManager: {fileID: 0}
   gem: {fileID: 1256026661}
 --- !u!114 &1256026661
 MonoBehaviour:
