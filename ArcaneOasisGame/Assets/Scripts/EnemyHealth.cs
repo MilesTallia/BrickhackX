@@ -2,35 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHealth : MonoBehaviour
-{
+public class EnemyHealth : MonoBehaviour{
     public int maxHealth = 200;
     public int currentHealth;
 
     public HealthBar healthBar;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    public ResourcesManager rm;
+
+    void Start() {
         currentHealth = maxHealth;
-
         healthBar.SetMaxHealth(maxHealth);
-        
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        //when taking damage call "TakeDamage(damage number dealt)"
-        //TakeDamage(1);
+    void Update() { 
     }
 
-    public void TakeDamage(int damage)
-    {
+    public void TakeDamage(int damage) {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
         if (currentHealth <= 0) {
             Destroy(gameObject);
+            rm.addEssence(5);
         }
     }
 }

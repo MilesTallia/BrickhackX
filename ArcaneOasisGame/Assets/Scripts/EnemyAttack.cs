@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyAttack : MonoBehaviour
-{
+public class EnemyAttack : MonoBehaviour {
 
     // puts attack on cooldown
     private float attackCooldown = 0;
@@ -30,14 +29,12 @@ public class EnemyAttack : MonoBehaviour
     public Sprite restSprite;
 
     public Sprite attackSprite;
-    // Start is called before the first frame update
 
     public float attackSpeed;
 
     private Vector3 velocity;
     
-    void Start()
-    {
+    void Start() {
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
@@ -53,17 +50,15 @@ public class EnemyAttack : MonoBehaviour
         spriteRenderer.sprite = attackSprite;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         if (attackCooldown > 0) {
             attackCooldown -= Time.deltaTime;
         }
-        else{
-            if (isAttacking){
+        else {
+            if (isAttacking) {
                 attackTimer += Time.deltaTime;
                 if (attackTimer > readyTime) {
-                    if (distanceMoved > attackDistance){
+                    if (distanceMoved > attackDistance) {
                         isAttacking = false;
                         attackCooldown = 2;
                         setRestSprite();
@@ -81,7 +76,6 @@ public class EnemyAttack : MonoBehaviour
                 isAttacking = true;
                 setReadySprite();
             }
-
         }
     }
 }

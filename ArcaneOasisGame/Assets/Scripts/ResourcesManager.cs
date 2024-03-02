@@ -60,8 +60,7 @@ public class ResourcesManager : MonoBehaviour {
         return essenceAmount;
     }
     
-    void Start()
-    {
+    void Start() {
         woodAmount = 0;
         stoneAmount = 0;
         metalAmount = 0;
@@ -69,8 +68,7 @@ public class ResourcesManager : MonoBehaviour {
         essenceAmount = 0;
     }
 
-    void Update()
-    {
+    void Update() {
         
     }
 }

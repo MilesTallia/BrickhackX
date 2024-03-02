@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class Spell1Cooldown : MonoBehaviour
-{
+public class Spell1Cooldown : MonoBehaviour {
     [SerializeField]
     private Image imageCooldown;
 
@@ -18,34 +17,25 @@ public class Spell1Cooldown : MonoBehaviour
 
     public CastSpells castSpells;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         textCooldown.gameObject.SetActive(false);
         imageCooldown.fillAmount = 0.0f;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(isCooldown)
-        {
+    void Update() {
+        if(isCooldown) {
             ApplyCooldown();
         }        
     }
 
-    void ApplyCooldown()
-    {
+    void ApplyCooldown() {
         cooldownTimer -= Time.deltaTime;
 
-        if(castSpells.getSpellTimer1() < 0.0f)
-        {
+        if(castSpells.getSpellTimer1() < 0.0f) {
             isCooldown = false;
             textCooldown.gameObject.SetActive(false);
             imageCooldown.fillAmount = 0.0f;
-        }
-        else
-        {
+        } else {
             textCooldown.text = Mathf.RoundToInt(cooldownTimer).ToString();
             imageCooldown.fillAmount = cooldownTimer / cooldownTime;
 
