@@ -1,9 +1,9 @@
 const cacheName = "DefaultCompany-ArcaneOasisGame-1.0";
 const contentToCache = [
-    "Build/Dev5-Miles-Bugs.loader.js",
-    "Build/Dev5-Miles-Bugs.framework.js",
-    "Build/Dev5-Miles-Bugs.data",
-    "Build/Dev5-Miles-Bugs.wasm",
+    "Build/game.loader.js",
+    "Build/game.framework.js",
+    "Build/game.data",
+    "Build/game.wasm",
     "TemplateData/style.css"
 
 ];
